@@ -60,14 +60,24 @@ public class Banco {
                     objcb = new CuentaBancaria();
                     break;
                 case 3:
-                    System.out.println("Va a realizar un ingreso, indique la cantidad a ingresar:");
-                    objcb.ingresar(sc.nextInt());
-                    System.out.println("Gracias por acudir a nosotros para cumplir sus deseos.");
+                    int i = 0;
+                    for(; i < alcb.size(); i++){ }
+                    if(i==0) System.out.println("no puede realizar un ingreso si no existe una cuenta.");
+                    else{
+                        System.out.println("Va a realizar un ingreso, indique la cantidad a ingresar:");
+                        objcb.ingresar(sc.nextInt());
+                        System.out.println("Gracias por acudir a nosotros para cumplir sus deseos.");
+                    }
                     break;
                 case 4:
-                    System.out.println("Va a realizar una retirada de efectivo, indique la cantidad a retirar:");
-                    objcb.retirar(sc.nextInt());
-                    System.out.println("Gracias por acudir a nosotros para cumplir sus deseos.");
+                    int j = 0;
+                    for(; j < alcliente.size(); j++){ }
+                    if(j==0) System.out.println("no puede realizar una retirada de efectivo si no existe una cuenta.");
+                    else{
+                        System.out.println("Va a realizar una retirada de efectivo, indique la cantidad a retirar:");
+                        objcb.retirar(sc.nextInt());
+                        System.out.println("Gracias por acudir a nosotros para cumplir sus deseos.");
+                    }
                     break;
                 case 0:
                     break;
