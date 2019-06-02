@@ -10,9 +10,9 @@ package banco;
  * @author Javier
  */
 public class Cliente {
-    int idcliente;
-    String nombre,apellidos,dirección;
-    int telefono;
+    private int idcliente;
+    private String nombre,apellidos,dirección;
+    private int telefono;
 
     public Cliente(int idcliente, String nombre, String apellidos, String dirección, int telefono) {
         this.idcliente = idcliente;
