@@ -10,7 +10,7 @@ package banco;
  * @author Javier
  */
 public class CuentaBancaria {
-      String nombrecb;
+    String nombrecb;
     int saldocb;
     String idcb;
     Cliente clientecb;
@@ -19,7 +19,7 @@ public class CuentaBancaria {
         
     }
     
-    CuentaBancaria(String nombrecb, int saldocb, String idcb, Cliente clientecb){
+    CuentaBancaria(String idcb, String nombrecb, int saldocb, Cliente clientecb){
         this.nombrecb = nombrecb;
         this.saldocb = saldocb;
         this.idcb = idcb;

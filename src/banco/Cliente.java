@@ -12,9 +12,9 @@ package banco;
 public class Cliente {
     private int idcliente;
     private String nombre,apellidos,dirección;
-    private int telefono;
+    private String telefono;
 
-    public Cliente(int idcliente, String nombre, String apellidos, String dirección, int telefono) {
+    public Cliente(int idcliente, String nombre, String apellidos, String dirección, String telefono) {
         this.idcliente = idcliente;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -57,11 +57,11 @@ public class Cliente {
         this.dirección = dirección;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
