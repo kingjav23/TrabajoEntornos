@@ -5,6 +5,7 @@
  */
 package banco;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -24,6 +25,8 @@ public class Banco {
         int opcion = 0, id = 0;
         Scanner sc = new Scanner(System.in);
         String cadena = "";
+        ArrayList<Cliente> alcliente = new ArrayList<Cliente>();
+        ArrayList<CuentaBancaria> alcb = new ArrayList<CuentaBancaria>();
         
         do{
             System.out.println(" --- MENÚ --- ");
@@ -43,6 +46,8 @@ public class Banco {
                     cli.setApellidos(sc.nextLine());
                     cli.setDirección(sc.nextLine());
                     cli.setTelefono(sc.nextLine());
+                    alcliente.add(cli);
+                    cli = new Cliente();
                     break;
                 case 2:
                     System.out.println("Introduce los datos de la nueva cuenta en este orden: \n"
@@ -51,6 +56,8 @@ public class Banco {
                     objcb.setNombrecb(sc.nextLine());
                     objcb.setSaldocb(sc.nextInt());
                     objcb.setClientecb(cli);
+                    alcb.add(objcb);
+                    objcb = new CuentaBancaria();
                     break;
                 case 3:
                     System.out.println("Va a realizar un ingreso, indique la cantidad a ingresar:");
