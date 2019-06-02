@@ -78,6 +78,12 @@ public class Banco {
                         objcb.retirar(sc.nextInt());
                         System.out.println("Gracias por acudir a nosotros para cumplir sus deseos.");
                     }
+                    System.out.println("Va a realizar una retirada de efectivo, indique la cantidad a retirar:");
+                    if(objcb.getSaldocb()<0){
+                            System.out.println("Importe a retirar Superior a su saldo , introduzca otro saldo o pongase en contacto con nuestras oficinas");
+                }
+                    else {objcb.retirar(sc.nextInt());}
+                    System.out.println("Gracias por acudir a nosotros para cumplir sus deseos.");
                     break;
                 case 0:
                     break;
